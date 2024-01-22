@@ -45,14 +45,14 @@ public class UnidadeController : ControllerBase
     }
 
     [HttpPut("/alterar-unidade/{id:guid}")]
-    public async Task<ActionResult<Usuario>> PutUsuario(
+    public async Task<ActionResult<Unidade>> PutUnidade(
             [FromRoute] Guid id,
-            [FromBody] Usuario usuario)
+            [FromBody] Unidade unidade)
     {
 
         try
         {
-            var result = await _unidadeService.PutUsuario(usuario, id);
+            var result = await _unidadeService.PutUnidade(unidade, id);
             return Ok(result);
         }
         catch

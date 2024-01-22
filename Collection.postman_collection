@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "786c5945-aa30-46e6-803e-e785c585cf97",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32473312"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Get Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7259/Buscar-usuario",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"Buscar-usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Usuario Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7259/buscar-usuario/af6f10f0-147d-40b0-ac4e-d896a60bc122",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"buscar-usuario",
+								"af6f10f0-147d-40b0-ac4e-d896a60bc122"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": \"leticia\",\r\n    \"senha\": \"senha\",\r\n    \"status\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7259/alterar-usuario/af6f10f0-147d-40b0-ac4e-d896a60bc122",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"alterar-usuario",
+								"af6f10f0-147d-40b0-ac4e-d896a60bc122"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Usuario Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"login\": \"string\",\r\n  \"senha\": \"string\",\r\n  \"status\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7259/Criar-usuario",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"Criar-usuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colaboradores",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7259/listar-colaboradores",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"listar-colaboradores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7259/deletar-colaborador/878da596-fa90-4bac-94ec-7c4fe5847b3a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"deletar-colaborador",
+								"878da596-fa90-4bac-94ec-7c4fe5847b3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Colaboradores",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"nome\": \"string\",\r\n  \"usuario\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"login\": \"string\",\r\n    \"senha\": \"string\",\r\n    \"status\": 0\r\n  },\r\n  \"unidade\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"codigoUnidade\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"nome\": \"string\",\r\n    \"status\": 0,\r\n    \"colaboradorId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7259/alterar-colaborador/878da596-fa90-4bac-94ec-7c4fe5847b3a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"alterar-colaborador",
+								"878da596-fa90-4bac-94ec-7c4fe5847b3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"nome\": \"string\",\r\n  \"usuario\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"login\": \"string\",\r\n    \"senha\": \"string\",\r\n    \"status\": 0\r\n  },\r\n  \"usuarioId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"unidade\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"codigoUnidade\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"nome\": \"string\",\r\n    \"status\": 0\r\n  },\r\n  \"unidadeId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7259/Colaborador",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"Colaborador"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Unidades",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7259/listar-colaboradores",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"listar-colaboradores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Colaboradores",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"nome\": \"string\",\r\n  \"usuario\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"login\": \"string\",\r\n    \"senha\": \"string\",\r\n    \"status\": 0\r\n  },\r\n  \"unidade\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"codigoUnidade\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"nome\": \"string\",\r\n    \"status\": 0,\r\n    \"colaboradorId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7259/alterar-colaborador/878da596-fa90-4bac-94ec-7c4fe5847b3a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"alterar-colaborador",
+								"878da596-fa90-4bac-94ec-7c4fe5847b3a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"nome\": \"string\",\r\n  \"usuario\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"login\": \"string\",\r\n    \"senha\": \"string\",\r\n    \"status\": 0\r\n  },\r\n  \"usuarioId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n  \"unidade\": {\r\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"codigoUnidade\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r\n    \"nome\": \"string\",\r\n    \"status\": 0\r\n  },\r\n  \"unidadeId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7259/Colaborador",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7259",
+							"path": [
+								"Colaborador"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
